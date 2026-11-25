@@ -1,0 +1,13 @@
+*{box-sizing:border-box}body{margin:0;background:#f4f6fb;color:#1c2340;font-family:"Segoe UI",system-ui,sans-serif;line-height:1.5}
+.top{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,4vw,3rem);background:#fff;border-bottom:1px solid #dde1ee;position:sticky;top:0;z-index:2}
+h1{margin:0;font-size:1.6rem}h1 span{color:#d6246e}.cart-link{background:#27358f;color:#fff;text-decoration:none;padding:.5rem 1.1rem;border-radius:999px;font-weight:600}
+main{display:grid;grid-template-columns:1fr;gap:1.5rem;padding:1rem clamp(1rem,4vw,3rem);max-width:1250px;margin:auto}
+@media(min-width:900px){main{grid-template-columns:1fr 320px;align-items:start}.cart{position:sticky;top:80px}}
+.tools{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1rem}.sr{position:absolute;left:-999px}input,select{font:inherit;padding:.55rem .8rem;border:1px solid #d5daea;border-radius:10px;background:#fff}input{flex:1 1 180px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.card{background:#fff;border:1px solid #dde1ee;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}.pic{height:120px;display:grid;place-items:center;color:#fff;font-size:2rem;font-weight:800}
+.info{padding:.8rem;display:flex;flex-direction:column;gap:.2rem;flex:1}.info h3{margin:0;font-size:1rem}.info small{color:#59627f}.price{font-weight:700}
+.add,.buy{font:inherit;font-weight:600;border:0;border-radius:8px;padding:.5rem;background:#27358f;color:#fff;cursor:pointer;margin-top:auto}.add:hover,.buy:hover{background:#1d2a78}.buy{width:100%;background:#d6246e;margin-top:.8rem}
+.cart{background:#fff;border:1px solid #dde1ee;border-radius:12px;padding:1rem}.cart h2{margin:0 0 .6rem;font-size:1.2rem}ul{list-style:none;padding:0;margin:0}
+li{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;padding:.6rem 0;border-bottom:1px solid #eef0f8}li .q{display:flex;gap:.3rem;align-items:center}li button{width:28px;height:28px;border:1px solid #d5daea;background:#fff;border-radius:6px;cursor:pointer}li .rm{border:0;color:#c2304a;width:auto;background:none;text-decoration:underline}
+.total{display:flex;justify-content:space-between;margin-top:.8rem;font-size:1.1rem}#empty,#msg{color:#59627f}:focus-visible{outline:3px solid #17a8cf;outline-offset:2px}

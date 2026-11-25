@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuickCart - E-commerce Website</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><h1>Quick<span>Cart</span></h1><a class="cart-link" href="#cart">Cart (<span id="n">0</span>)</a></header>
+<main><section aria-label="Products"><div class="tools"><label class="sr" for="q">Search products</label><input id="q" type="search" placeholder="Search products">
+<label class="sr" for="cat">Category</label><select id="cat"></select><label class="sr" for="sort">Sort</label>
+<select id="sort"><option value="">Sort: featured</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option></select></div>
+<div id="products" class="grid"></div><p id="none" hidden>No products found.</p></section>
+<aside id="cart" class="cart" aria-label="Shopping cart"><h2>Your cart</h2><ul id="items"></ul><p id="empty">Your cart is empty.</p>
+<div class="total"><span>Total</span><b id="total">Rs. 0</b></div><button id="checkout" class="buy" type="button">Checkout</button><p id="msg" role="status"></p></aside></main>
+<script src="script.js"></script></body></html>
